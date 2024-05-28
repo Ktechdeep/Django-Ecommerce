@@ -1,6 +1,6 @@
 # Django-Ecommerce
 
-Ecommerce website built with Django 2.2.3, Python 3.7.3, and AWS
+Ecommerce website built with Django 2.2.3, Python 3.7.3, and AWS/EC2
 
 ![image](https://user-images.githubusercontent.com/29988949/65267147-499fc580-dac9-11e9-90e8-eccbc93c7c3a.png)
 
@@ -31,21 +31,18 @@ Ecommerce website built with Django 2.2.3, Python 3.7.3, and AWS
 
 # Installation
 
-`git clone https://github.com/zinmyoswe/Django-Ecommerce.git`
+`git clone https://github.com/Ktechdeep/Django-Ecommerce.git`
 
 `cd Django-Ecommerce`
 
-`pip install virtualenv`
 
-`virtualenv env`
+# For Mac/ Linux/ ubuntu : Creating Environment and installing dependency
 
-# For Mac/ Linux
+`sudo apt install python3.7 python3.7-venv`
 
-`source env/bin/activate`
+`python3.7 -m venv myenv`
 
-# For Window
-
-`env\Scripts\activate`
+`source myenv/bin/activate`
 
 `pip install -r requirements.txt`
 
@@ -67,6 +64,11 @@ pip install Pillow
 `python manage.py migrate`
 
 `python manage.py runserver`
+
+## (For EC2) Add New Inbound rule in security group to accept request from anywhere 
+## Rule : Type: custom , PortRange : 8000 , Source : custom , 0.0.0.0
+
+`python manage.py runserver 0.0.0.0:8000`
 
 # For Admin Login
 
