@@ -68,9 +68,17 @@ pip install Pillow
 `python manage.py runserver`
 
 ## (For EC2) Add New Inbound rule in security group to accept request from anywhere 
-## Rule : Type: custom , PortRange : 8000 , Source : custom , 0.0.0.0
+`Rule : Type: custom , PortRange : 8000 , Source : custom , 0.0.0.0`
+
+Go to allowed host in setting.py file 
+Add your EC2 instance ip in allowed host list inside setting.py file
+`Allowedhost = ['YourEC2IP']`
+
+Now open tab on anymachine:
+`http://yourip:8000`
 
 `python manage.py runserver 0.0.0.0:8000`
+
 
 # For Admin Login
 
