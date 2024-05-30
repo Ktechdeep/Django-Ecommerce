@@ -38,9 +38,9 @@ Ecommerce website built with Django 2.2.3, Python 3.7.3, and AWS/EC2
 
 # For Mac/ Linux/ ubuntu : Creating Environment and installing dependency
 
-`sudo apt install python3.7 python3.7-venv`
-
-`python3.7 -m venv myenv`
+`sudo apt update'
+`sudo apt install python3-venv python3-pip -y'
+`python3 -m venv myenv'
 
 `source myenv/bin/activate`
 
